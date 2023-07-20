@@ -10,8 +10,8 @@ This is an application that is designed to support the work of musicians. The ap
 
 This is a reed that allows you to choose the tuning and the sound you want to tune to.
 
-![alt text](https://github.com/Zyla303/Tuner-Mobile-App/blob/main/IMG/scalefinder1.png?raw=true)
-![alt text](https://github.com/Zyla303/Tuner-Mobile-App/blob/main/IMG/scalefinder2.png?raw=true)
+![alt text](https://github.com/Zyla303/Tuner-Mobile-App/blob/main/IMG/scalefinder1.jpg?raw=true)
+![alt text](https://github.com/Zyla303/Tuner-Mobile-App/blob/main/IMG/scalefinder2.jpg?raw=true)
 
 
 ### Scale finder
