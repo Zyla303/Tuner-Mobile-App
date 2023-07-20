@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Project1.Views.ScalesPage"
+             xmlns:vm="clr-namespace:Project1.ViewModels"
+             Title="{Binding Title}">
+
+    <ContentPage.BindingContext>
+        <vm:ScalesViewModel />
+    </ContentPage.BindingContext>
+
+    <Grid RowSpacing="0" ColumnSpacing="0">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="4*" />
+            <RowDefinition Height="4*" />
+            <RowDefinition Height="2*" />
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <Frame Grid.Row="0" BackgroundColor="{StaticResource Primary}">
+            <Label VerticalTextAlignment="Center" HorizontalTextAlignment="Center" Text="" FontAttributes="Bold" FontSize="90" TextColor="{StaticResource Tertiary}" x:Name="LabelFrequencyScales"/>
+        </Frame>
+
+        <ScrollView Grid.Row="1" BackgroundColor="{StaticResource Primary}" Margin="0,0,0,0">
+            <StackLayout Orientation="Vertical" Padding="40,0,40,0" Spacing="10">
+                <Label Text="Your notes:" Padding="-20,0,0,20" FontSize="Title"/>
+                <Label Margin="0,0,0,0" Text=""
+                        TextColor="{StaticResource Tertiary}"
+                        FontSize="20"
+                       VerticalTextAlignment="Center"
+                        HorizontalOptions="Center"
+                        x:Name="Label1"/>
+                <Label Margin="0,0,0,0" Text=""
+                        TextColor="{StaticResource Tertiary}"
+                        FontSize="20"
+                       VerticalTextAlignment="Center"
+                        HorizontalOptions="Center"
+                        x:Name="Label2"/>
+                <Label Margin="0,0,0,0" Text=""
+                        TextColor="{StaticResource Tertiary}"
+                        FontSize="20"
+                       VerticalTextAlignment="Center"
+                        HorizontalOptions="Center"
+                        x:Name="Label3"/>
+                <Label Margin="0,0,0,0" Text=""
+                        TextColor="{StaticResource Tertiary}"
+                        FontSize="20"
+                       VerticalTextAlignment="Center"
+                        HorizontalOptions="Center"
+                        x:Name="Label4"/>
+                <Label Margin="0,0,0,0" Text=""
+                        TextColor="{StaticResource Tertiary}"
+                        FontSize="20"
+                       VerticalTextAlignment="Center"
+                        HorizontalOptions="Center"
+                        x:Name="Label5"/>
+                <Label Margin="0,0,0,0" Text=""
+                        TextColor="{StaticResource Tertiary}"
+                        FontSize="20"
+                       VerticalTextAlignment="Center"
+                        HorizontalOptions="Center"
+                        x:Name="Label6"/>
+            </StackLayout>
+        </ScrollView>
+        <Frame Grid.Row="2" BackgroundColor="{StaticResource Primary}" Margin="0,0,0,0">
+            <StackLayout Orientation="Vertical" Padding="30,0,30,0" Spacing="10">
+                <Button Margin="0,0,0,0" Text="Search"
+                        BackgroundColor="{StaticResource Primary}"
+                        BorderColor="{StaticResource Quaternary}"
+                        BorderWidth="2"
+                        BorderRadius="15"
+                        TextColor="{StaticResource Tertiary}"
+                        Clicked="ScalesList"/>
+                <Button Margin="0,0,0,0" Text="Clear"
+                        BackgroundColor="{StaticResource Primary}"
+                        BorderColor="{StaticResource Quaternary}"
+                        BorderWidth="2"
+                        BorderRadius="15"
+                        TextColor="{StaticResource Tertiary}"
+                        Clicked="ClearList"/>
+            </StackLayout>
+        </Frame>
+    </Grid>
+
+</ContentPage>

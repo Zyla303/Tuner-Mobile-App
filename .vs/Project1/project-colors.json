@@ -1,0 +1,21 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "4af60468-abe6-4fe8-8b57-a74f97a59db7": {
+      "ProjectGuid": "4af60468-abe6-4fe8-8b57-a74f97a59db7",
+      "DisplayName": "Project1",
+      "ColorIndex": 0
+    },
+    "6b20608b-6b1d-43d8-a5be-b754f6c667cd": {
+      "ProjectGuid": "6b20608b-6b1d-43d8-a5be-b754f6c667cd",
+      "DisplayName": "Project1.Android",
+      "ColorIndex": 1
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Miscellaneous Files",
+      "ColorIndex": -1
+    }
+  },
+  "NextColorIndex": 2
+}

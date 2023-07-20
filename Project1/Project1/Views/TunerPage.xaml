@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Project1.Views.TunerPage"
+             xmlns:vm="clr-namespace:Project1.ViewModels"
+             Title="{Binding Title}"
+             BackgroundColor="Black">
+
+    <ContentPage.BindingContext>
+        <vm:TunerViewModel />
+    </ContentPage.BindingContext>
+
+    <Grid RowSpacing="0" ColumnSpacing="0">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="4*" />
+            <RowDefinition Height="2*" />
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="3*" />
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <Frame Grid.Row="0" BackgroundColor="Black" Margin="0,0,0,0" CornerRadius="15" x:Name="BackgroundTuner">
+            <Label VerticalTextAlignment="Center" HorizontalTextAlignment="Center" Text="" FontAttributes="Bold" FontSize="90" TextColor="{StaticResource Tertiary}" x:Name="LabelFrequency"/>
+        </Frame>
+        <Frame Grid.Row="1" BackgroundColor="{StaticResource Primary}" Margin="0,0,0,0">
+            <StackLayout>
+                <Label Text="-" TextColor="{StaticResource Tertiary}" HorizontalOptions="StartAndExpand" Margin="0,-10,0,0" FontAttributes="Bold" FontSize="30"/>
+                <Label Text="|" TextColor="{StaticResource Tertiary}" HorizontalOptions="CenterAndExpand" Margin="0,-50,0,0" FontAttributes="Bold" FontSize="30"/>
+                <Label Text="+" TextColor="{StaticResource Tertiary}" HorizontalOptions="EndAndExpand" Margin="0,-40,0,0" FontAttributes="Bold" FontSize="30"/>
+                <BoxView HeightRequest="50" WidthRequest="350" CornerRadius="10" HorizontalOptions="StartAndExpand" VerticalOptions="Center" BackgroundColor="{StaticResource Tertiary}" x:Name="ScaleChanger"/>
+            </StackLayout>
+        </Frame>
+        <Frame Grid.Row="2" BackgroundColor="{StaticResource Primary}" Margin="0,-10,0,0">
+            <StackLayout Orientation="Vertical" Padding="0,7,0,0" Spacing="10">
+                <Label VerticalTextAlignment="Center" HorizontalTextAlignment="Start" FontAttributes="Bold" FontSize="20" Text="Choose tuning"></Label>
+                <Button Margin="0,-47,0,0" Text="Choose"
+                BackgroundColor="{StaticResource Primary}"
+                        BorderColor="{StaticResource Quaternary}"
+                        BorderWidth="2"
+                        BorderRadius="15"
+                        TextColor="{StaticResource Tertiary}"
+                        WidthRequest="120" HorizontalOptions="End"
+                        Clicked="TuningChange"/>
+            </StackLayout>
+        </Frame>
+        
+        <Frame Grid.Row="3" BackgroundColor="{StaticResource Primary}" Margin="0,0,0,0">
+            <StackLayout Orientation="Vertical" Padding="10,0,10,0" >
+                <Button Margin="0,0,0,0" Text="E"
+                BackgroundColor="{StaticResource Primary}"
+                        BorderColor="{StaticResource Quaternary}"
+                        BorderWidth="2"
+                        BorderRadius="15"
+                        TextColor="{StaticResource Tertiary}"
+                        WidthRequest="75" HeightRequest="75"
+                        HorizontalOptions="Start"
+                        x:Name="FirstButton"
+                        Clicked="FirstNoteChange"/>
+                <Button Margin="0,-80,0,0" Text="A"
+                BackgroundColor="{StaticResource Primary}"
+                        BorderColor="{StaticResource Quaternary}"
+                        BorderWidth="2"
+                        BorderRadius="15"
+                        TextColor="{StaticResource Tertiary}"
+                        WidthRequest="75" HeightRequest="75"
+                        HorizontalOptions="Center"
+                        x:Name="SecondButton"
+                        Clicked="SecondNoteChange"/>
+                <Button Margin="0,-80,0,0" Text="D"
+                BackgroundColor="{StaticResource Primary}"
+                        BorderColor="{StaticResource Quaternary}"
+                        BorderWidth="2"
+                        BorderRadius="15"
+                        TextColor="{StaticResource Tertiary}"
+                        WidthRequest="75" HeightRequest="75"
+                        HorizontalOptions="End"
+                        x:Name="ThirdButton"
+                        Clicked="ThirdNoteChange"/>
+                <Button Margin="0,0,0,0" Text="G"
+                BackgroundColor="{StaticResource Primary}"
+                        BorderColor="{StaticResource Quaternary}"
+                        BorderWidth="2"
+                        BorderRadius="15"
+                        TextColor="{StaticResource Tertiary}"
+                        WidthRequest="75" HeightRequest="75"
+                        HorizontalOptions="Start"
+                        x:Name="FourthButton"
+                        Clicked="FourthNoteChange"/>
+                <Button Margin="0,-80,0,0" Text="B"
+                BackgroundColor="{StaticResource Primary}"
+                        BorderColor="{StaticResource Quaternary}"
+                        BorderWidth="2"
+                        BorderRadius="15"
+                        TextColor="{StaticResource Tertiary}"
+                        WidthRequest="75" HeightRequest="75"
+                        HorizontalOptions="Center"
+                        x:Name="FifthButton"
+                        Clicked="FifthNoteChange"/>
+                <Button Margin="0,-80,0,0" Text="E"
+                BackgroundColor="{StaticResource Primary}"
+                        BorderColor="{StaticResource Quaternary}"
+                        BorderWidth="2"
+                        BorderRadius="15"
+                        TextColor="{StaticResource Tertiary}"
+                        WidthRequest="75" HeightRequest="75"
+                        HorizontalOptions="End"
+                        x:Name="SixthButton"
+                        Clicked="SixthNoteChange"/>
+            </StackLayout>
+        </Frame>
+    </Grid>
+
+</ContentPage>

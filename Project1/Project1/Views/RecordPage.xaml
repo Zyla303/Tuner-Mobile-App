@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:vm="clr-namespace:Project1.ViewModels"
+             x:Class="Project1.Views.RecordPage"
+             xmlns:skia="clr-namespace:SkiaSharp.Views.Forms;assembly=SkiaSharp.Views.Forms"
+             Title="{Binding Title}">
+
+    <ContentPage.BindingContext>
+        <vm:RecordViewModel />
+    </ContentPage.BindingContext>
+
+    <Grid RowSpacing="0" ColumnSpacing="0">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="5*" />
+            <RowDefinition Height="3*" />
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="1*" />
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+            <ScrollView x:Name="FiveLinePool" Grid.Row="0" BackgroundColor="white" Margin="0,0,0,0">
+            <Grid RowSpacing="0" ColumnSpacing="0">
+                <Grid.RowDefinitions>
+                    <RowDefinition x:Name="widthOfCanva" Height="956" />
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <skia:SKCanvasView Grid.Row="0" Grid.Column="0" x:Name="canvas" PaintSurface="canvasView_PaintSurface" BackgroundColor="White"/>
+                </Grid>
+            </ScrollView>
+
+
+
+        <Frame Grid.Row="1" BackgroundColor="{StaticResource Primary}" Margin="0,0,0,0">
+            <Frame Grid.Row="0" BackgroundColor="{StaticResource Primary}">
+                <Label VerticalTextAlignment="Center" HorizontalTextAlignment="Center" Text="" FontAttributes="Bold" FontSize="90" TextColor="{StaticResource Tertiary}" x:Name="NoteRecorder"/>
+            </Frame>
+        </Frame>
+
+        <Frame Grid.Row="2" BackgroundColor="{StaticResource Primary}" Margin="0,0,0,0">
+            <StackLayout Orientation="Vertical" Padding="0,0,0,0">
+                <Button Margin="0,0,0,0" Text="Save Note" 
+                        FontSize="25" FontAttributes="Bold"
+                        BackgroundColor="{StaticResource Primary}"
+                        BorderColor="{StaticResource Quaternary}"
+                        BorderWidth="2"
+                        BorderRadius="15"
+                        TextColor="{StaticResource Tertiary}"
+                        WidthRequest="250" HeightRequest="50"
+                        HorizontalOptions="Center"
+                        Clicked="SaveNote"/>
+            </StackLayout>
+        </Frame>
+        <Frame Grid.Row="3" BackgroundColor="{StaticResource Primary}" Margin="0,0,0,0">
+            <StackLayout Orientation="Vertical" Padding="0,0,0,0">
+                <Button Margin="0,0,0,0" Text="Clear" 
+                        FontSize="25" FontAttributes="Bold"
+                        BackgroundColor="{StaticResource Primary}"
+                        BorderColor="{StaticResource Quaternary}"
+                        BorderWidth="2"
+                        BorderRadius="15"
+                        TextColor="{StaticResource Tertiary}"
+                        WidthRequest="250" HeightRequest="50"
+                        HorizontalOptions="Center"
+                        Clicked="ClearCanva"/>
+            </StackLayout>
+        </Frame>
+
+    </Grid>
+
+</ContentPage>

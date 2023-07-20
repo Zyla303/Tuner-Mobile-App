@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<xct:Popup 
+             xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:xct="http://xamarin.com/schemas/2020/toolkit"
+             x:Class="Project1.Views.SaveNotePopUp"
+             IsLightDismissEnabled = "False"
+             BackgroundColor="{StaticResource Primary}"
+             Size="350,700">
+    
+<Grid RowSpacing="0" ColumnSpacing="0">
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="2*" />
+            <RowDefinition Height="4*" />
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="1*" />
+        </Grid.RowDefinitions>
+    
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <Frame Grid.Row="0" BackgroundColor="{StaticResource Primary}" Margin="0,0,0,0">
+            <StackLayout Orientation="Vertical" Padding="0,0,0,0">
+                <Label VerticalTextAlignment="Center" HorizontalTextAlignment="Start" FontSize="Title" TextColor="{StaticResource Tertiary}"
+                       Text="Note options:"/>
+            </StackLayout>
+        </Frame>
+    
+        <Frame Grid.Row="1" BackgroundColor="{StaticResource Primary}" Margin="0,0,0,0">
+            <StackLayout Orientation="Vertical" Padding="0,0,0,0">
+                <Label VerticalTextAlignment="Center" HorizontalTextAlignment="Center" FontAttributes="Bold" FontSize="60" TextColor="{StaticResource Tertiary}"
+                       x:Name="YourNote"/>
+            </StackLayout>
+        </Frame>
+
+        <Frame Grid.Row="2" BackgroundColor="{StaticResource Primary}" Margin="0,0,0,0">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="2*"/>
+                    <RowDefinition Height="4*"/>
+                    <RowDefinition Height="4*"/>         
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="3*"/>
+                    <ColumnDefinition Width="4*"/>
+                    <ColumnDefinition Width="3*"/>
+                </Grid.ColumnDefinitions>
+
+                <Label Grid.Column="0" Grid.Row="0" VerticalTextAlignment="Center" HorizontalTextAlignment="End" FontSize="Title" TextColor="{StaticResource Tertiary}"
+                       Text="Choose"/>
+                <Label Grid.Column="1" Grid.Row="0" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" FontSize="Title" TextColor="{StaticResource Tertiary}"
+                       Text="note"/>
+                <Label Grid.Column="2" Grid.Row="0" VerticalTextAlignment="Center" HorizontalTextAlignment="Start" FontSize="Title" TextColor="{StaticResource Tertiary}"
+                       Text="length:"/>
+
+                <RadioButton Grid.Column="0" Grid.Row="1" VerticalOptions="Center" HorizontalOptions="Center" FontSize="10" TextColor="{StaticResource Tertiary}" Content="Semibreve" CheckedChanged="ChooseNoteLen" />
+                <RadioButton Grid.Column="1" Grid.Row="1" VerticalOptions="Center" HorizontalOptions="Center" FontSize="10" TextColor="{StaticResource Tertiary}" Content="Minim" CheckedChanged="ChooseNoteLen" IsChecked="True"/>
+                <RadioButton Grid.Column="2" Grid.Row="1" VerticalOptions="Center" HorizontalOptions="Center" FontSize="10" TextColor="{StaticResource Tertiary}" Content="Crotchet" CheckedChanged="ChooseNoteLen"/>
+
+                <RadioButton Grid.Column="0" Grid.Row="2" VerticalOptions="Center" HorizontalOptions="Center" FontSize="10" TextColor="{StaticResource Tertiary}" Content="Quaver" CheckedChanged="ChooseNoteLen"/>
+                <RadioButton Grid.Column="2" Grid.Row="2" VerticalOptions="Center" HorizontalOptions="Center" FontSize="10" TextColor="{StaticResource Tertiary}" Content="Semiquaver" CheckedChanged="ChooseNoteLen"/>
+
+            </Grid>
+        </Frame>
+
+        <Frame Grid.Row="3" BackgroundColor="{StaticResource Primary}" Margin="0,0,0,0">
+            <StackLayout Orientation="Vertical" Padding="0,0,0,0">
+                <Button Margin="0,0,0,0" Text="Add To Next"
+                        BackgroundColor="{StaticResource Primary}"
+                        BorderColor="{StaticResource Quaternary}"
+                        BorderWidth="2"
+                        BorderRadius="15"
+                        TextColor="{StaticResource Tertiary}"
+                        WidthRequest="250" HeightRequest="50"
+                        HorizontalOptions="Center"
+                        VerticalOptions="Center"
+                        Clicked="AddNoteToNext"/>
+            </StackLayout>
+        </Frame>
+        <Frame Grid.Row="4" BackgroundColor="{StaticResource Primary}" Margin="0,0,0,0">
+            <StackLayout Orientation="Vertical" Padding="0,0,0,0">
+                <Button Margin="0,0,0,0" Text="Add To This"
+                        BackgroundColor="{StaticResource Primary}"
+                        BorderColor="{StaticResource Quaternary}"
+                        BorderWidth="2"
+                        BorderRadius="15"
+                        TextColor="{StaticResource Tertiary}"
+                        WidthRequest="250" HeightRequest="50"
+                        HorizontalOptions="Center"
+                        VerticalOptions="Center"
+                        Clicked="AddNoteToThis"/>
+            </StackLayout>
+        </Frame>
+        <Frame Grid.Row="5" BackgroundColor="{StaticResource Primary}" Margin="0,0,0,0">
+            <StackLayout Orientation="Vertical" Padding="0,0,0,0">
+                <Button Margin="0,0,0,0" Text="Reject Note"
+                        BackgroundColor="{StaticResource Primary}"
+                        BorderColor="{StaticResource Quaternary}"
+                        BorderWidth="2"
+                        BorderRadius="15"
+                        TextColor="{StaticResource Tertiary}"
+                        WidthRequest="250" HeightRequest="50"
+                        HorizontalOptions="Center"
+                        VerticalOptions="Center"
+                        Clicked="GetBackToRecorder"/>
+            </StackLayout>
+        </Frame>
+    </Grid>
+
+</xct:Popup>

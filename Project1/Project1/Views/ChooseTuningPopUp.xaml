@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<xct:Popup 
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:xct="http://xamarin.com/schemas/2020/toolkit"
+    x:Class="Project1.Views.ChooseTuningPopUp"
+    IsLightDismissEnabled = "False"
+    BackgroundColor="{StaticResource Primary}"
+    Size="350,700">
+    <Grid RowSpacing="0" ColumnSpacing="0">
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="8*" />
+            <RowDefinition Height="1*" />
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <Frame Grid.Row="0" BackgroundColor="{StaticResource Primary}" Margin="0,0,0,0">
+            <StackLayout Orientation="Vertical" Padding="0,0,0,0">
+                <Label VerticalTextAlignment="Center" HorizontalTextAlignment="Start" FontAttributes="Bold" FontSize="30" TextColor="{StaticResource Tertiary}"
+                       Text="Choose tuning:"/>
+            </StackLayout>
+        </Frame>
+
+        <ScrollView Grid.Row="1" BackgroundColor="{StaticResource Primary}" Margin="0,0,0,0">
+            <ListView x:Name="TuningList" SeparatorColor="{StaticResource Secondary}" SelectionMode="Single" ItemsSource="{Binding Tuning}" HasUnevenRows="True" ItemTapped="ChooseScale">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto"/>
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="4*"/>
+                                    <ColumnDefinition Width="1*"/>
+                                    <ColumnDefinition Width="1*"/>
+                                    <ColumnDefinition Width="1*"/>
+                                    <ColumnDefinition Width="1*"/>
+                                    <ColumnDefinition Width="1*"/>
+                                    <ColumnDefinition Width="1*"/>
+                                    <ColumnDefinition Width="1*"/>
+                                </Grid.ColumnDefinitions>
+
+                                <Label Grid.Column="0" TextColor="{StaticResource Quaternary}" FontSize="22" Text="{Binding Name}" VerticalOptions="Center" HorizontalOptions="Start"/>
+
+                                <Label Grid.Column="1" Margin="0,6,0,0" FontSize="15" Text="{Binding FirstNote}" VerticalOptions="Center" HorizontalOptions="Center"/>
+                                <Label Grid.Column="2" Margin="0,6,0,0" FontSize="15" Text="{Binding SecondNote}" VerticalOptions="Center" HorizontalOptions="Center"/>
+
+                                <Label Grid.Column="3" Margin="0,6,0,0" FontSize="15" Text="{Binding ThirdNote}" VerticalOptions="Center" HorizontalOptions="Center"/>
+                                <Label Grid.Column="4" Margin="0,6,0,0" FontSize="15" Text="{Binding FourthNote}" VerticalOptions="Center" HorizontalOptions="Center"/>
+
+                                <Label Grid.Column="5" Margin="0,6,0,0" FontSize="15" Text="{Binding FifthNote}" VerticalOptions="Center" HorizontalOptions="Center"/>
+                                <Label Grid.Column="6" Margin="0,6,0,0" FontSize="15" Text="{Binding SixthNote}" VerticalOptions="Center" HorizontalOptions="Center"/>
+                            </Grid>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+
+        </ScrollView>
+
+        <Frame Grid.Row="2" BackgroundColor="{StaticResource Primary}" Margin="0,0,0,0">
+            <StackLayout Orientation="Vertical" Padding="0,0,0,0">
+                <Button Margin="0,0,0,0" Text="Back to Tuner"
+                        BackgroundColor="{StaticResource Primary}"
+                        BorderColor="{StaticResource Quaternary}"
+                        BorderWidth="2"
+                        BorderRadius="15"
+                        TextColor="{StaticResource Tertiary}"
+                        WidthRequest="250" HeightRequest="50"
+                        HorizontalOptions="Center"
+                        VerticalOptions="Center"
+                        Clicked="GetBackToTuner"/>
+            </StackLayout>
+        </Frame>
+    </Grid>
+</xct:Popup>

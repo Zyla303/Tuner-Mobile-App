@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Project1.Views.SettingsPage"
+             xmlns:vm="clr-namespace:Project1.ViewModels"
+             Title="{Binding Title}">
+    
+    <ContentPage.BindingContext>
+        <vm:SettingsViewModel />
+    </ContentPage.BindingContext>
+
+    <Grid RowSpacing="0" ColumnSpacing="0">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <ScrollView Grid.Row="0" BackgroundColor="{StaticResource Primary}" Margin="0,0,0,0">
+            <StackLayout Orientation="Vertical" Margin="0,0,0,0" Spacing="0">
+
+                <Label Margin="10,0,15,3" VerticalTextAlignment="Center" HorizontalTextAlignment="Start" Text="Test option" FontSize="Title" TextColor="{StaticResource Quaternary}"/>
+                <BoxView Color="{StaticResource Quaternary}" HeightRequest="1" WidthRequest="1" VerticalOptions="Center">
+                </BoxView>
+                <Label Margin="25,20,15,20" VerticalTextAlignment="Center" HorizontalTextAlignment="Start" Text="Test option" FontSize="16" TextColor="{StaticResource Secondary}"/>
+                <BoxView Color="{StaticResource Secondary}" HeightRequest="1" WidthRequest="1" VerticalOptions="Center">
+                </BoxView>
+                <Label Margin="25,20,15,20" VerticalTextAlignment="Center" HorizontalTextAlignment="Start" Text="Test option" FontSize="16" TextColor="{StaticResource Secondary}"/>
+                <BoxView Color="{StaticResource Secondary}" HeightRequest="1" WidthRequest="1" VerticalOptions="Center">
+                </BoxView>
+                <Label Margin="25,20,15,20" VerticalTextAlignment="Center" HorizontalTextAlignment="Start" Text="Test option" FontSize="16" TextColor="{StaticResource Secondary}"/>
+                <BoxView Color="{StaticResource Secondary}" HeightRequest="1" WidthRequest="1" VerticalOptions="Center">
+                </BoxView>
+                <Label Margin="25,20,15,20" VerticalTextAlignment="Center" HorizontalTextAlignment="Start" Text="Test option" FontSize="16" TextColor="{StaticResource Secondary}"/>
+                <BoxView Color="{StaticResource Secondary}" HeightRequest="1" WidthRequest="1" VerticalOptions="Center">
+                </BoxView>
+                <Label Margin="10,15,15,3" VerticalTextAlignment="Center" HorizontalTextAlignment="Start" Text="Test option" FontSize="Title" TextColor="{StaticResource Quaternary}"/>
+                <BoxView Color="{StaticResource Quaternary}" HeightRequest="1" WidthRequest="1" VerticalOptions="Center">
+                </BoxView>
+                <Label Margin="25,20,15,20" VerticalTextAlignment="Center" HorizontalTextAlignment="Start" Text="Test option" FontSize="16" TextColor="{StaticResource Secondary}"/>
+                <BoxView Color="{StaticResource Secondary}" HeightRequest="1" WidthRequest="1" VerticalOptions="Center">
+                </BoxView>
+                <Label Margin="25,20,15,20" VerticalTextAlignment="Center" HorizontalTextAlignment="Start" Text="Test option" FontSize="16" TextColor="{StaticResource Secondary}"/>
+                <BoxView Color="{StaticResource Secondary}" HeightRequest="1" WidthRequest="1" VerticalOptions="Center">
+                </BoxView>
+                <Label Margin="25,20,15,20" VerticalTextAlignment="Center" HorizontalTextAlignment="Start" Text="Test option" FontSize="16" TextColor="{StaticResource Secondary}"/>
+                <BoxView Color="{StaticResource Secondary}" HeightRequest="1" WidthRequest="1" VerticalOptions="Center">
+                </BoxView>
+                <Label Margin="25,20,15,20" VerticalTextAlignment="Center" HorizontalTextAlignment="Start" Text="Test option" FontSize="16" TextColor="{StaticResource Secondary}"/>
+                <BoxView Color="{StaticResource Secondary}" HeightRequest="1" WidthRequest="1" VerticalOptions="Center">
+                </BoxView>
+                <Label Margin="10,15,15,3" VerticalTextAlignment="Center" HorizontalTextAlignment="Start" Text="Test option" FontSize="Title" TextColor="{StaticResource Quaternary}"/>
+                <BoxView Color="{StaticResource Quaternary}" HeightRequest="1" WidthRequest="1" VerticalOptions="Center">
+                </BoxView>
+                <Label Margin="25,20,15,20" VerticalTextAlignment="Center" HorizontalTextAlignment="Start" Text="Test option" FontSize="16" TextColor="{StaticResource Secondary}"/>
+                <BoxView Color="{StaticResource Secondary}" HeightRequest="1" WidthRequest="1" VerticalOptions="Center">
+                </BoxView>
+                <Label Margin="25,20,15,20" VerticalTextAlignment="Center" HorizontalTextAlignment="Start" Text="Test option" FontSize="16" TextColor="{StaticResource Secondary}"/>
+                <BoxView Color="{StaticResource Secondary}" HeightRequest="1" WidthRequest="1" VerticalOptions="Center">
+                </BoxView>
+                <Label Margin="25,20,15,20" VerticalTextAlignment="Center" HorizontalTextAlignment="Start" Text="Test option" FontSize="16" TextColor="{StaticResource Secondary}"/>
+                <BoxView Color="{StaticResource Secondary}" HeightRequest="1" WidthRequest="1" VerticalOptions="Center">
+                </BoxView>
+                <Label Margin="25,20,15,20" VerticalTextAlignment="Center" HorizontalTextAlignment="Start" Text="Test option" FontSize="16" TextColor="{StaticResource Secondary}"/>
+                <BoxView Color="{StaticResource Secondary}" HeightRequest="1" WidthRequest="1" VerticalOptions="Center">
+                </BoxView>
+                <Label Margin="10,15,15,3" VerticalTextAlignment="Center" HorizontalTextAlignment="Start" Text="Test option" FontSize="Title" TextColor="{StaticResource Quaternary}"/>
+                <BoxView Color="{StaticResource Quaternary}" HeightRequest="1" WidthRequest="1" VerticalOptions="Center">
+                </BoxView>
+                <Label Margin="25,20,15,20" VerticalTextAlignment="Center" HorizontalTextAlignment="Start" Text="Test option" FontSize="16" TextColor="{StaticResource Secondary}"/>
+                <BoxView Color="{StaticResource Secondary}" HeightRequest="1" WidthRequest="1" VerticalOptions="Center">
+                </BoxView>
+                <Label Margin="25,20,15,20" VerticalTextAlignment="Center" HorizontalTextAlignment="Start" Text="Test option" FontSize="16" TextColor="{StaticResource Secondary}"/>
+                <BoxView Color="{StaticResource Secondary}" HeightRequest="1" WidthRequest="1" VerticalOptions="Center">
+                </BoxView>
+                <Label Margin="25,20,15,20" VerticalTextAlignment="Center" HorizontalTextAlignment="Start" Text="Test option" FontSize="16" TextColor="{StaticResource Secondary}"/>
+                <BoxView Color="{StaticResource Secondary}" HeightRequest="1" WidthRequest="1" VerticalOptions="Center">
+                </BoxView>
+                <Label Margin="25,20,15,20" VerticalTextAlignment="Center" HorizontalTextAlignment="Start" Text="Test option" FontSize="16" TextColor="{StaticResource Secondary}"/>
+                <BoxView Color="{StaticResource Secondary}" HeightRequest="1" WidthRequest="1" VerticalOptions="Center">
+                </BoxView>
+                <Label Margin="10,15,15,3" VerticalTextAlignment="Center" HorizontalTextAlignment="Start" Text="Test option" FontSize="Title" TextColor="{StaticResource Quaternary}"/>
+                <BoxView Color="{StaticResource Quaternary}" HeightRequest="1" WidthRequest="1" VerticalOptions="Center">
+                </BoxView>
+                <Label Margin="25,20,15,20" VerticalTextAlignment="Center" HorizontalTextAlignment="Start" Text="Test option" FontSize="16" TextColor="{StaticResource Secondary}"/>
+                <BoxView Color="{StaticResource Secondary}" HeightRequest="1" WidthRequest="1" VerticalOptions="Center">
+                </BoxView>
+                <Label Margin="25,20,15,20" VerticalTextAlignment="Center" HorizontalTextAlignment="Start" Text="Test option" FontSize="16" TextColor="{StaticResource Secondary}"/>
+                <BoxView Color="{StaticResource Secondary}" HeightRequest="1" WidthRequest="1" VerticalOptions="Center">
+                </BoxView>
+                <Label Margin="25,20,15,20" VerticalTextAlignment="Center" HorizontalTextAlignment="Start" Text="Test option" FontSize="16" TextColor="{StaticResource Secondary}"/>
+                <BoxView Color="{StaticResource Secondary}" HeightRequest="1" WidthRequest="1" VerticalOptions="Center">
+                </BoxView>
+                <Label Margin="25,20,15,20" VerticalTextAlignment="Center" HorizontalTextAlignment="Start" Text="Test option" FontSize="16" TextColor="{StaticResource Secondary}"/>
+                <BoxView Color="{StaticResource Secondary}" HeightRequest="1" WidthRequest="1" VerticalOptions="Center">
+                </BoxView>
+            </StackLayout>
+        </ScrollView>
+    </Grid>
+
+</ContentPage>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Shell xmlns="http://xamarin.com/schemas/2014/forms" 
+       xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+       xmlns:local="clr-namespace:Project1.Views"
+       Title="Project1"
+       x:Class="Project1.AppShell">
+
+    <Shell.Resources>
+        <ResourceDictionary>
+            <Style x:Key="BaseStyle" TargetType="Element">
+                <Setter Property="Shell.BackgroundColor" Value="{StaticResource Primary}" />
+                <Setter Property="Shell.ForegroundColor" Value="{StaticResource Quaternary}" />
+                <Setter Property="Shell.TitleColor" Value="{StaticResource Tertiary}" />
+                <Setter Property="Shell.DisabledColor" Value="{StaticResource Secondary}" />
+                <Setter Property="Shell.UnselectedColor" Value="{StaticResource Secondary}" />
+                <Setter Property="Shell.TabBarBackgroundColor" Value="{StaticResource Primary}" />
+                <Setter Property="Shell.TabBarForegroundColor" Value="{StaticResource Secondary}"/>
+                <Setter Property="Shell.TabBarUnselectedColor" Value="{StaticResource Quaternary}"/>
+                <Setter Property="Shell.TabBarTitleColor" Value="{StaticResource Tertiary}"/>
+            </Style>
+            <Style TargetType="TabBar" BasedOn="{StaticResource BaseStyle}" />
+            <Style TargetType="FlyoutItem" BasedOn="{StaticResource BaseStyle}" />
+        </ResourceDictionary>
+    </Shell.Resources>
+
+    <TabBar>
+        <ShellContent Title="Tuner" Route="TunerPage" ContentTemplate="{DataTemplate local:TunerPage}" />
+        <ShellContent Title="Scales" Route="ScalesPage" ContentTemplate="{DataTemplate local:ScalesPage}" />
+        <ShellContent Title="Record" Route="RecordPage" ContentTemplate="{DataTemplate local:RecordPage}" />
+        <ShellContent Title="Settings" Route="SettingsPage" ContentTemplate="{DataTemplate local:SettingsPage}" />
+    </TabBar>
+
+</Shell>
