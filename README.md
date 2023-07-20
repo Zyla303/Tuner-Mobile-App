@@ -3,7 +3,7 @@
 
 This is an application that is designed to support the work of musicians. The application works on the principle of listening to the sounds played by the user. Its main idea is to give possibilities without knowledge of music theory, which it tries to fulfill by offering 3 functionalities:
 
-![alt text](https://github.com/[zyla303]/[Tuner-Mobile-App]/blob/[main]/IMG/tuner1.jpg?raw=true)
+![alt text](https://github.com/Zyla303/Tuner-Mobile-App/blob/main/IMG/tuner1.jpg?raw=true)
 
 
 ### Tuner
