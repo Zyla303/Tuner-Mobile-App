@@ -1,6 +1,6 @@
 
 # Mobile tuner
-## Used technologies: C#, Xamarin, SQL, WPF.
+## Used technologies: C#, Xamarin, SQL, WCF.
 This is an application that is designed to support the work of musicians. The application works on the principle of listening to the sounds played by the user. Its main idea is to give possibilities without knowledge of music theory, which it tries to fulfill by offering 3 functionalities:
 
 ![alt text](https://github.com/Zyla303/Tuner-Mobile-App/blob/main/IMG/tuner111.png?raw=true)
